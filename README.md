@@ -1,17 +1,17 @@
-# 國立臺北大學三峽校區學生會投票網站
+# 國立臺北大學臺北校區學生會投票網站
 
 ## 簡介
 
-使用基於 [vue3](https://vuejs.org/) 的 [nuxt](https://nuxt.com/) 框架製作的全端網站\
-使用 [tailwindcss](https://tailwindcss.com/) 框架進行樣式設計\
-使用 [postgreSQL](https://www.postgresql.org/) 資料庫\
-使用 [prisma](https://www.prisma.io/) 作為 ORM\
-透過 [vercel](https://vercel.com/) 進行部署上線\
+使用基於 [vue3](https://vuejs.org/) 的 [nuxt](https://nuxt.com/) 框架製作的全端網站
+使用 [tailwindcss](https://tailwindcss.com/) 框架進行樣式設計
+使用 [postgreSQL](https://www.postgresql.org/) 資料庫
+使用 [prisma](https://www.prisma.io/) 作為 ORM
+透過 [vercel](https://vercel.com/) 進行部署上線
 供學生會進行投票使用
 
 ## 網址
 
-https://ntpusu-vote.vercel.app/
+https://ntpusa-vote.vercel.app/
 
 ## 開發
 
@@ -41,7 +41,7 @@ bun run build
 
 ### 資料庫
 
-使用 [prisma](https://www.prisma.io/) 作為 ORM，schema 位於 prisma/schema.prisma\
+使用 [prisma](https://www.prisma.io/) 作為 ORM，schema 位於 prisma/schema.prisma
 開好資料庫後將相關環境變數設定好，就能執行以下指令
 
 #### 資料庫 Schema 同步
@@ -59,6 +59,7 @@ bun db
 ### ESLint
 
 使用 vscode 需添加設定
+
 ```
 {
   // Enable ESlint flat config support
@@ -68,14 +69,14 @@ bun db
 
 ### Dev Container
 
-有 VSCode 開發容器設定檔，可以在容器內進行開發\
+有 VSCode 開發容器設定檔，可以在容器內進行開發
 若有變更容器設定檔，且不需要追蹤變更，可以輸入以下指令
 
 ```bash
 git update-index --skip-worktree .devcontainer/devcontainer.json
 ```
 
-設定後 checkout 或部分 git 操作會出現錯誤\
+設定後 checkout 或部分 git 操作會出現錯誤
 可以輸入以下指令解除設定，操作完畢後再設定回去
 
 ```bash

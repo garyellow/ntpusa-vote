@@ -203,19 +203,21 @@
           <span class="max-[400px]:hidden">
             Made by
             <NuxtLink
-              to="https://github.com/ntpusu/ntpusu-vote/graphs/contributors"
+              to="https://github.com/garyellow"
               class="font-bold hover:text-stone-600 hover:underline"
               target="_blank"
-              >contributors
+            >
+              garyellow
             </NuxtLink>
             |
           </span>
           <NuxtLink
-            to="https://github.com/ntpusu/ntpusu-vote"
+            to="https://github.com/garyellow/ntpusa-vote"
             class="font-bold hover:text-stone-600 hover:underline"
             target="_blank"
-            >Open Source</NuxtLink
           >
+            Open Source
+          </NuxtLink>
         </div>
       </span>
       <span
@@ -224,10 +226,10 @@
         ©
         {{ new Date().getFullYear() }}
         <NuxtLink
-          to="https://www.facebook.com/NTPUSU"
+          to="https://www.facebook.com/NTaipeiUSA"
           class="font-bold hover:text-stone-600 hover:underline"
           target="_blank"
-          >國立臺北大學三峽校區學生會</NuxtLink
+          >國立臺北大學臺北校區學生會</NuxtLink
         >
       </span>
     </div>
@@ -251,9 +253,9 @@
       <div class="flex justify-center">
         <span
           class="w-11/12 whitespace-pre-wrap break-words text-xs sm:text-sm md:text-base"
-          >國立臺北大學三峽校區學生會投票網站（下稱「投票網站」）使用cookie來記錄您的登入狀態及增進您的使用體驗。這些Cookie僅限於投票網站使用，不會將Cookie用於商業目的。這些Cookie將在您使用投票網站時存儲在您的設備上，並在一定時間後過期。您可以在您的瀏覽器設置中管理和刪除cookie。如果您選擇禁用cookie，將會無法使用投票網站的登入功能。繼續使用投票網站即表示你同意我們使用Cookie。若您對此使用聲明有任何疑問，請隨時
+          >國立臺北大學臺北校區學生會投票網站（下稱「投票網站」）使用cookie來記錄您的登入狀態及增進您的使用體驗。這些Cookie僅限於投票網站使用，不會將Cookie用於商業目的。這些Cookie將在您使用投票網站時存儲在您的設備上，並在一定時間後過期。您可以在您的瀏覽器設置中管理和刪除cookie。如果您選擇禁用cookie，將會無法使用投票網站的登入功能。繼續使用投票網站即表示你同意我們使用Cookie。若您對此使用聲明有任何疑問，請隨時
           <NuxtLink
-            to="https://www.facebook.com/NTPUSU"
+            to="https://www.facebook.com/NTaipeiUSA"
             target="_blank"
             class="whitespace-pre-wrap break-all font-bold text-blue-400 hover:text-blue-500 hover:underline"
           >
@@ -277,29 +279,29 @@ useSeoMeta({
   titleTemplate() {
     return `${route.meta.title} | 學生會投票網站`;
   },
-  description: "國立臺北大學三峽校區學生會投票網站",
-  ogTitle: "國立臺北大學三峽校區學生會投票網站",
+  description: "國立臺北大學臺北校區學生會投票網站",
+  ogTitle: "國立臺北大學臺北校區學生會投票網站",
   ogDescription() {
-    return `${route.meta.title} | 國立臺北大學三峽校區學生會投票網站`;
+    return `${route.meta.title} | 國立臺北大學臺北校區學生會投票網站`;
   },
-  ogSiteName: "國立臺北大學三峽校區學生會投票網站",
+  ogSiteName: "國立臺北大學臺北校區學生會投票網站",
   ogType: "website",
   ogUrl: url,
-  ogImage: url + "/ntpusu.jpg",
-  ogImageAlt: "國立臺北大學三峽校區學生會的標誌",
+  ogImage: url + "/ntpusa.jpg",
+  ogImageAlt: "國立臺北大學臺北校區學生會的標誌",
   ogImageType: "image/jpeg",
   ogImageSecureUrl: url,
   ogLocale: "zh_TW",
   ogLocaleAlternate: "zh_TW",
-  author: "國立臺北大學三峽校區學生會",
-  creator: "國立臺北大學三峽校區學生會",
-  publisher: "國立臺北大學三峽校區學生會",
-  twitterTitle: "國立臺北大學三峽校區學生會投票網站",
+  author: "國立臺北大學臺北校區學生會",
+  creator: "國立臺北大學臺北校區學生會",
+  publisher: "國立臺北大學臺北校區學生會",
+  twitterTitle: "國立臺北大學臺北校區學生會投票網站",
   twitterDescription() {
-    return `${route.meta.title} | 國立臺北大學三峽校區學生會投票網站`;
+    return `${route.meta.title} | 國立臺北大學臺北校區學生會投票網站`;
   },
-  twitterImage: url + "/ntpusu.jpg",
-  twitterImageAlt: "國立臺北大學三峽校區學生會的標誌",
+  twitterImage: url + "/ntpusa.jpg",
+  twitterImageAlt: "國立臺北大學臺北校區學生會的標誌",
   twitterCard: "summary",
 });
 
@@ -310,7 +312,7 @@ useHead({
   meta: [
     {
       name: "copyright",
-      content: "國立臺北大學三峽校區學生會",
+      content: "國立臺北大學臺北校區學生會",
     },
   ],
   link: [
