@@ -378,7 +378,7 @@
           >
             <template #sub-title>
               若有疑問請隨時<NuxtLink
-                to="https://www.facebook.com/NTPUSU"
+                to="https://www.facebook.com/NTaipeiUSA"
                 target="_blank"
                 class="whitespace-pre-wrap break-all font-bold text-blue-500 hover:text-blue-800 hover:underline"
                 >聯繫我們</NuxtLink
@@ -403,7 +403,7 @@
           2. 網路連線斷了<br>
           3. 未在投票時間內投票<br>
           若有疑問請聯繫<NuxtLink
-            to="https://www.facebook.com/NTPUSU"
+            to="https://www.facebook.com/NTaipeiUSA"
             target="_blank"
             class="whitespace-pre-wrap break-all font-bold text-blue-400 hover:text-blue-500 hover:underline"
             >學生會</NuxtLink

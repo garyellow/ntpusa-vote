@@ -1,4 +1,4 @@
-# 國立臺北大學三峽校區學生會投票網站
+# 國立臺北大學臺北校區學生會投票網站
 
 ## 簡介
 
@@ -11,7 +11,7 @@
 
 ## 網址
 
-https://ntpusu-vote.vercel.app/
+https://ntpusa-vote.vercel.app/
 
 ## 開發
 
@@ -69,14 +69,14 @@ bun db
 
 ### Dev Container
 
-有 VSCode 開發容器設定檔，可以在容器內進行開發\
+有 VSCode 開發容器設定檔，可以在容器內進行開發
 若有變更容器設定檔，且不需要追蹤變更，可以輸入以下指令
 
 ```bash
 git update-index --skip-worktree .devcontainer/devcontainer.json
 ```
 
-設定後 checkout 或部分 git 操作會出現錯誤\
+設定後 checkout 或部分 git 操作會出現錯誤
 可以輸入以下指令解除設定，操作完畢後再設定回去
 
 ```bash

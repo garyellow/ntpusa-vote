@@ -292,7 +292,13 @@
           >
             <template #content>
               <div class="text-center">
-                投票期間為<br>2024年5月23日<br>00:00 ~ 23:59
+                投票期間為
+                <br>
+                2024年5月6日 18:00
+                <br>
+                ~
+                <br>
+                2024年5月8日 23:59
               </div>
             </template>
             <div class="m-3 text-center">
@@ -330,11 +336,12 @@
           |
         </span>
         <NuxtLink
-          to="https://github.com/ntpusu/ntpusu-vote"
+          to="https://github.com/garyellow/ntpusa-vote"
           class="font-bold hover:text-stone-600 hover:underline"
           target="_blank"
-          >Open Source</NuxtLink
         >
+          Open Source
+        </NuxtLink>
       </span>
       <span
         class="text-center text-xs font-bold tracking-tighter text-stone-700 sm:text-sm sm:tracking-tight md:text-base md:tracking-normal"
@@ -342,10 +349,10 @@
         ©
         {{ new Date().getFullYear() }}
         <NuxtLink
-          to="https://www.facebook.com/NTPUSU"
+          to="https://www.facebook.com/NTaipeiUSA"
           class="font-bold hover:text-stone-600 hover:underline"
           target="_blank"
-          >國立臺北大學三峽校區學生會</NuxtLink
+          >國立臺北大學臺北校區學生會</NuxtLink
         >
       </span>
     </div>
@@ -369,12 +376,12 @@
       <div class="flex justify-center">
         <span
           class="w-11/12 whitespace-pre-wrap break-words text-xs sm:text-sm md:text-base"
-          >國立臺北大學三峽校區學生會投票網站（下稱「投票網站」）使用 Cookie
+          >國立臺北大學臺北校區學生會投票網站（下稱「投票網站」）使用 Cookie
           來記錄您的登入狀態及增進您的使用體驗。這些 Cookie
           僅限於投票網站使用，不會將 Cookie 用於其他目的。如果您選擇禁用
           Cookie，將會無法使用投票網站的部分功能。繼續使用投票網站即表示你同意我們使用
           Cookie。若您對此使用聲明有任何疑問，請隨時<NuxtLink
-            to="https://www.facebook.com/NTPUSU"
+            to="https://www.facebook.com/NTaipeiUSA"
             target="_blank"
             class="whitespace-pre-wrap break-all font-bold text-blue-400 hover:text-blue-500 hover:underline"
             >聯繫我們</NuxtLink
@@ -398,29 +405,29 @@ useSeoMeta({
   titleTemplate() {
     return `${route.meta.title} | 學生會投票網站`;
   },
-  description: "國立臺北大學三峽校區學生會投票網站",
-  ogTitle: "國立臺北大學三峽校區學生會投票網站",
+  description: "國立臺北大學臺北校區學生會投票網站",
+  ogTitle: "國立臺北大學臺北校區學生會投票網站",
   ogDescription() {
-    return `${route.meta.title} | 國立臺北大學三峽校區學生會投票網站`;
+    return `${route.meta.title} | 國立臺北大學臺北校區學生會投票網站`;
   },
-  ogSiteName: "國立臺北大學三峽校區學生會投票網站",
+  ogSiteName: "國立臺北大學臺北校區學生會投票網站",
   ogType: "website",
   ogUrl: url,
-  ogImage: url + "/ntpusu.jpg",
-  ogImageAlt: "國立臺北大學三峽校區學生會的標誌",
+  ogImage: url + "/ntpusa.jpg",
+  ogImageAlt: "國立臺北大學臺北校區學生會的標誌",
   ogImageType: "image/jpeg",
   ogImageSecureUrl: url,
   ogLocale: "zh_TW",
   ogLocaleAlternate: "zh_TW",
-  author: "國立臺北大學三峽校區學生會",
-  creator: "國立臺北大學三峽校區學生會",
-  publisher: "國立臺北大學三峽校區學生會",
-  twitterTitle: "國立臺北大學三峽校區學生會投票網站",
+  author: "國立臺北大學臺北校區學生會",
+  creator: "國立臺北大學臺北校區學生會",
+  publisher: "國立臺北大學臺北校區學生會",
+  twitterTitle: "國立臺北大學臺北校區學生會投票網站",
   twitterDescription() {
-    return `${route.meta.title} | 國立臺北大學三峽校區學生會投票網站`;
+    return `${route.meta.title} | 國立臺北大學臺北校區學生會投票網站`;
   },
-  twitterImage: url + "/ntpusu.jpg",
-  twitterImageAlt: "國立臺北大學三峽校區學生會的標誌",
+  twitterImage: url + "/ntpusa.jpg",
+  twitterImageAlt: "國立臺北大學臺北校區學生會的標誌",
   twitterCard: "summary",
 });
 
@@ -431,19 +438,19 @@ useHead({
   meta: [
     {
       name: "copyright",
-      content: "國立臺北大學三峽校區學生會",
+      content: "國立臺北大學臺北校區學生會",
     },
   ],
   link: [
     {
       rel: "icon",
       type: "image/jpeg",
-      href: "/ntpusu.jpg",
+      href: "/ntpusa.jpg",
     },
     {
       rel: "favicon icon",
       type: "image/x-icon",
-      href: "/favicon.ico",
+      href: "/ntpusa.ico",
     },
   ],
   script: [
@@ -608,8 +615,8 @@ const checkLogin = () => {
 const { data: totalCnt, refresh: totalCntRefresh } = await useFetch("/api/loginCnt/get");
 const { data: realCnt, refresh: realCntRefresh } = await useFetch("/api/loginCnt/get", {
   params: {
-    startTime: new Date(2024, 4, 23).getTime(),
-    endTime: new Date(2024, 4, 23, 23, 59, 59, 999).getTime(),
+    startTime: new Date(2024, 4, 6, 18, 0, 0).getTime(),
+    endTime: new Date(2024, 4, 8, 23, 59, 59, 999).getTime(),
   },
 });
 
